@@ -12,11 +12,6 @@ using Grid = std::vector<std::vector<char>>;
 using Coord = std::complex<int>;
 using History = std::vector<std::vector<std::pair<bool, Coord>>>;
 
-struct Memo {
-    bool visited = false;
-    size_t dist = -1;
-};
-
 Grid parse(std::string path);
 size_t part_1(Grid grid);
 size_t part_2(Grid grid);
